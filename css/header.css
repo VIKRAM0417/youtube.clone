@@ -60,6 +60,44 @@
   margin-left:-1px;
   margin-right: 10px;
 }
+.search-button,
+ .voice-search-button,
+ .upload-icon-container,
+ .apps-icon-container,
+ .notification-icon-container,
+ .profile-picture-container{
+  position:relative;
+  display: flex;
+  justify-content: center;
+}
+.search-button .tooltip ,
+ .voice-search-button .tooltip,
+ .upload-icon-container .tooltip,
+ .apps-icon-container .tooltip,
+ .notification-icon-container .tooltip,
+ .profile-picture-container .tooltip{
+  font-family: Roboto, Arial;
+  position:absolute;
+  background-color: gray;
+  color:white;
+  font:12px;
+  border:none;
+  padding:4px 8px 4px 8px;
+  bottom:-30px;
+  border-radius:2px;
+  opacity:0;
+  transition:opacity 0.15s;
+  pointer-events:none;
+  white-space: nowrap;
+}
+.search-button:hover .tooltip,
+ .voice-search-button:hover .tooltip,
+ .upload-icon-container:hover .tooltip,
+ .apps-icon-container:hover .tooltip,
+ .notification-icon-container:hover .tooltip,
+ .profile-picture-container:hover .tooltip{
+  opacity:1;
+}
 .voice-search-button{
   height:40px;
   width:40px;
